@@ -13,10 +13,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 api = Api(app)
 
-@app.before_first_request
-def create_tables():
-	db.create_all()
-
 
 api.add_resource(Artigo, '/artigo/<string:name>')
 api.add_resource(ListaArtigos, '/artigos')
