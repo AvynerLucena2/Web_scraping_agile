@@ -59,6 +59,7 @@ class Bsoup():
 		data2 = [line[1]  for line in artigo]
 
 
+
 		# # Saves the articles in the database and in the json file
 		for i in range(nb_artigos-1):
 			with open('ICMS\%s' %name[i], 'w', encoding='utf8') as write_file:
